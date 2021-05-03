@@ -20,8 +20,6 @@ h1{
     background: rgb(0, 0, 0);
     height: 80px;
     display: flex;
-
-    overflow: hidden;
     justify-content: center;
     align-items: center;
     font-size: large;
