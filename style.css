@@ -5,15 +5,7 @@
     font-family: sans-serif;
     scroll-behavior:smooth;
 }
-body{
-    margin: 0;
-    padding: 0;
-}
 
-h1{
-    margin: 0;
-    padding: 0;
-}
 
 
 .navbar {
@@ -33,7 +25,8 @@ h1{
     justify-content: center;
     height: 80px;
     z-index: 1;
-
+    width: 200%;
+    max-width: 1000px;
     margin: 0 auto 0 auto;
     padding: 0 0px 0 0px;
 }
@@ -99,4 +92,3 @@ a.button:hover {
     padding: 10px 50px;
     text-indent: 30px;
 }
-
