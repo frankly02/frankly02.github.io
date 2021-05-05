@@ -9,47 +9,26 @@
 
 
 .navbar {
-    background: rgb(0, 0, 0);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    background-color: blue;
+}
+
+.navbar a {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    font-family: sans-serif;
     font-size: large;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    color: white;
+    width: 33.33%;
+    float: left;
 }
 
-.navbar_container {
-    display:flex;
-    justify-content: center;
-    height: 80px;
-    z-index: 1;
-    width: 200%;
-    max-width: 1000px;
-    margin: 0 auto 0 auto;
-    padding: 0 0px 0 0px;
+.navbar a:hover{
+    color: red;
 }
 
-.navbar_menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
 
-.navbar__item {
-    height: 80px;
-}
-
-.navbar__links {
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    text-decoration: none;
-    height: 100%;
-}
 
 .button {
     color: black;
@@ -68,10 +47,19 @@ a.button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+@media screen and (max-width: 1080px) {
+    .button {
+        float: none;
+        display:inline-block;
+        padding: 15% 15%;
+    }
+}
+
 .content {
     text-align:center;
     align-items: center;
     justify-content: center;
+    padding: 100px;
 }
 
 .title {
@@ -87,8 +75,9 @@ a.button:hover {
 
 .paragraph {
     text-align :left;
-    font-family:cursive;
+    font-family:sans-serif;
     font-size: larger;
     padding: 10px 50px;
     text-indent: 30px;
 }
+
