@@ -10,6 +10,8 @@
 
 .navbar {
     width: 100%;
+    position:fixed;
+    z-index:0;
     background-color: blue;
 }
 
@@ -28,7 +30,10 @@
     color: red;
 }
 
-
+#proj-list {
+    padding: 30px 30px; 
+    display:flex;
+}
 
 .button {
     color: black;
@@ -47,25 +52,17 @@ a.button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-@media screen and (max-width: 1080px) {
-    .button {
-        float: none;
-        display:inline-block;
-        padding: 15% 15%;
-    }
-}
-
 .content {
     text-align:center;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .title {
     font-family:impact;
     font-size: 50px;
-    padding:30px;
+    padding:30px 0;
 }
 
 .subtitle {
@@ -76,8 +73,52 @@ a.button:hover {
 .paragraph {
     text-align :left;
     font-family:sans-serif;
-    font-size: larger;
+    font-size: x-large;
     padding: 10px 50px;
     text-indent: 30px;
 }
 
+.project-name {
+    font-family:impact;
+    font-size: 50px;
+    padding:30px 0;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+.collapsible {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    width: 100%;
+}
+
+.aboutContent {
+    width: 100%;
+    display:none;
+    overflow: scroll;
+    background-color:white
+}
+
+@media screen and (max-width: 880px) {
+    .button {
+        float: none;
+        display:inline-block;
+        padding: 11.5% 11.5%;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-name {
+        font-size: 28px;
+    }
+    .paragraph {
+        font-size: medium;
+    }
+}
